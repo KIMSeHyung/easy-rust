@@ -45,4 +45,24 @@ fn main() {
 
     println!("mul by ten: {}", mul_number(10, 20));
 
+
+    /* mutable, immutable */
+    let _some_number = 10;
+    // _some_number = 1; 불가능, 기본적으로 immutable
+    let mut _some_number2 = 10;
+    _some_number2 = 11;
+    println!("mutable: {}", _some_number2);
+
+    /* shadowing, 같은 이름을 다시씀 */
+    let my_variable = 10;
+    let my_variable = "shadow";
+    println!("shadowing {}", my_variable);
+
+    /* shadowing 하는 이유중 하나, 마지막 결과만 필요한데 다른 변수명을 쓰기 싫을때 */
+    let x = 3;
+    let x = x * 3;
+    let x = x * 3;
+
+    println!("shadowing2: {}", x);
+
 }
