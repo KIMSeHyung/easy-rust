@@ -19,4 +19,7 @@ fn main() {
     println!("length of string 'abc': {}", "abc".chars().count());
 
     println!("my age is {}", give_number());
+
+    println!("number {n}", n = my_number);
+    println!("{0}, {1}, {0}", my_number, second_number);
 }
