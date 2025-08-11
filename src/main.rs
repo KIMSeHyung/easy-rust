@@ -1,8 +1,13 @@
+// () - empty tuple, unit type (void)
+
 use std::{mem::size_of};
 
 fn give_number() -> i32 {
     // return 37 or
     37
+}
+
+fn empty_tuple() -> () {
 }
 
 fn main() {
@@ -22,4 +27,10 @@ fn main() {
 
     println!("number {n}", n = my_number);
     println!("{0}, {1}, {0}", my_number, second_number);
+
+    let _empty_tuple = empty_tuple();
+
+    // Debug print
+    println!("empty tuple: {:?}", _empty_tuple);
+
 }
